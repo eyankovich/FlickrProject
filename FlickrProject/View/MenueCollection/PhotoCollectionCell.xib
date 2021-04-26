@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionCell" id="gTV-IL-0wX" customClass="PhotoCollectionCell" customModule="FlickrProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="281" height="263"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OHF-rg-GHZ">
+                        <rect key="frame" x="15" y="15" width="251" height="188"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vci-io-iIf">
+                        <rect key="frame" x="20" y="213" width="156" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Y7-iz-PBY">
+                        <rect key="frame" x="191" y="218" width="70" height="30"/>
+                        <state key="normal" title=" Load" image="icloud.and.arrow.down" catalog="system">
+                            <color key="titleColor" name="AccentColor"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9Y7-iz-PBY" secondAttribute="trailing" constant="20" id="4og-er-2en"/>
+                <constraint firstItem="Vci-io-iIf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="8QM-VG-ejV"/>
+                <constraint firstItem="9Y7-iz-PBY" firstAttribute="leading" secondItem="Vci-io-iIf" secondAttribute="trailing" constant="15" id="Bwa-nE-oaA"/>
+                <constraint firstAttribute="bottom" secondItem="OHF-rg-GHZ" secondAttribute="bottom" constant="60" id="FEg-Ng-8y6"/>
+                <constraint firstAttribute="trailing" secondItem="Vci-io-iIf" secondAttribute="trailing" constant="105" id="KIv-pQ-7YJ"/>
+                <constraint firstItem="9Y7-iz-PBY" firstAttribute="top" secondItem="OHF-rg-GHZ" secondAttribute="bottom" constant="15" id="P3F-7B-C4P"/>
+                <constraint firstAttribute="trailing" secondItem="OHF-rg-GHZ" secondAttribute="trailing" constant="15" id="SKv-Ic-F2m"/>
+                <constraint firstAttribute="bottom" secondItem="Vci-io-iIf" secondAttribute="bottom" constant="10" id="TgK-Tc-ErK"/>
+                <constraint firstItem="OHF-rg-GHZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="XDb-Im-efB"/>
+                <constraint firstItem="OHF-rg-GHZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="egd-J3-PFf"/>
+                <constraint firstAttribute="bottom" secondItem="9Y7-iz-PBY" secondAttribute="bottom" constant="15" id="hIL-1X-p5v"/>
+                <constraint firstItem="Vci-io-iIf" firstAttribute="top" secondItem="OHF-rg-GHZ" secondAttribute="bottom" constant="10" id="rQP-H5-Xl8"/>
+            </constraints>
+            <size key="customSize" width="281" height="263"/>
+            <connections>
+                <outlet property="photoCollectionImage" destination="OHF-rg-GHZ" id="I5T-oo-7gW"/>
+                <outlet property="titleCollection" destination="Vci-io-iIf" id="zMN-FI-aBj"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="142.96875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icloud.and.arrow.down" catalog="system" width="128" height="112"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

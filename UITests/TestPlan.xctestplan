@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "66449B5C-307F-4167-8950-91FF37DB32ED",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FlickrProject.xcodeproj",
+        "identifier" : "687D37D9260269C2007051E7",
+        "name" : "UITests"
+      }
+    }
+  ],
+  "version" : 1
+}

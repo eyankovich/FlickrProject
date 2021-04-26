@@ -1,0 +1,15 @@
+//
+//  EnviromentConfigs.xcconfig
+//  FlickrProject
+//
+//  Created by Егор Янкович on 2/24/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASEURL = www.flickr.com
+APIKEY = 7fc94f2cca0dc9714e6b410e90256ce9
+IMAGEBASEURL = live.staticflickr.com
+LOGIN = admin
+PASSWORD = test
